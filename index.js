@@ -34,7 +34,7 @@ app.get('/trang/:sotrang', (req, res) => {
             "#soTrang": "soTrang"
         },
         ExpressionAttributeValues: {
-            ":email": req.params.sotrang
+            ":email": Number(req.params.sotrang)
         }
     };
     console.log(Number(req.params.sotrang))
